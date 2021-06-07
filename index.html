@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+    <title>Apteka pod Jarzębinami</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" id="logo">Apteka Pod Jarzębinami</a>
+        <a href="index.html" title="Informacje o aptece">O nas</a>
+        <a href="aktualnosci.html" title="Nowinki o aptece">Aktualności</a>
+        <a href="kontakt.html" title="Kontakt i godziny pracy">Kontakt</a>
+        <div id="zoom" title="Tryb wiekszych liter" onclick="sizeUp();">Większe litery</div>
+        <div id="menu" onclick="expandNav();"><i class="fas fa-bars"></i></div>
+    </nav>
+    <div id="mobileNav">
+        <a href="index.html" class="mobileLink">O nas</a>
+        <a href="aktualnosci.html" class="mobileLink">Aktualności</a>
+        <a href="kontakt.html" class="mobileLink">Kontakt</a>
+    </div>
+    <div id="bgGallery">
+        <img id="bg1" class="bg" src="./img/bg1.jpg">
+        <img id="bg2" class="bg" src="./img/bg2.jpg">
+        <img id="bg3" class="bg" src="./img/bg3.jpg">
+        <img id="arrow" src="./img/arrow.gif" onclick="scroll();">
+    </div>
+    <div class="content">
+        <div class="title">O nas</div>
+        <p>Apteka powstała w latach 50. i od zawsze cieszyła się dobrą renomą. Obecna właścicielka, mgr
+            farm. Danuta Hanik rozpoczęła pracę w tej placówce w latach 70. Mimo, że jest już na
+            emeryturze, nie ma zamiaru żegnać się z ukochanym zawodem. Jako farmaceutka pracuje nieprzerwanie
+            od 50 lat.</p>
+        <p>Apteka Pod Jarzębinami to miejsce z tradycjami. Fach jest tu przekazywany
+            z pokolenia na pokolenie. Zawód po mamie odziedziczyła mgr farm. Małgorzata Hanik, która
+            w aptece pracuje od ponad 20 lat.</p>
+        <p>W Aptece Pod Jarzębinami pacjent nie jest traktowany jako klient i obsługiwany jak
+            w supermarkecie. Profesjonalni farmaceuci z dużym stażem pracy i doświadczeniem oferują
+            mu opiekę farmaceutyczną, służą radą i pomagają, nawet jeśli pacjent prosi o coś, co wykracza
+            poza ich obowiązki.</p>
+        <p>Apteka Pod Jarzębinami to miejsce, w którym najważniejsza nie jest reklama i zysk,
+            ale człowiek.</p>
+        <p>Nasze motto to <i>Primum non nocere</i> (z łać. „po pierwsze nie szkodzić”).</p>
+    </div>
+    <div class="copy">Copyright &copy; 2021 Marek Porębski, All right reserved.</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

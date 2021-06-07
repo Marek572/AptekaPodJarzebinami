@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+    <title>Apteka pod Jarzębinami</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" id="logo">Apteka Pod Jarzębinami</a>
+        <a href="index.html" title="Informacje o aptece">O nas</a>
+        <a href="aktualnosci.html" title="Nowinki o aptece">Aktualności</a>
+        <a href="kontakt.html" title="Kontakt i godziny pracy">Kontakt</a>
+        <div id="zoom" title="Tryb wiekszych liter" onclick="sizeUp();">Większe litery</div>
+        <div id="menu" onclick="expandNav();"><i class="fas fa-bars"></i></div>
+    </nav>
+    <div id="mobileNav">
+        <a href="index.html" class="mobileLink">O nas</a>
+        <a href="aktualnosci.html" class="mobileLink">Aktualności</a>
+        <a href="kontakt.html" class="mobileLink">Kontakt</a>
+    </div>
+    <div id="bgGallery">
+        <img id="bg1" class="bg" src="./img/bg1.jpg">
+        <img id="bg2" class="bg" src="./img/bg2.jpg">
+        <img id="bg3" class="bg" src="./img/bg3.jpg">
+        <img id="arrow" src="./img/arrow.gif">
+    </div>
+    <div class="content">
+        <div class="title">Kontakt</div>
+        <div id="info">
+            <div id="kontakt">
+                <ul id="ulPrzerwa">
+                    <li>Apteka Pod Jarzębinami sp.j.</li>
+                    <li>os. Kazimierzowskie 30</li>
+                    <li>31-844 Kraków</li>
+                </ul>
+                <ul>
+                    <li>Czynne:</li>
+                    <li>Pon. 8:00-21:00</li>
+                    <li>Wt. 8:00-21:00</li>
+                    <li>Śr. Pt. 8:00-21:00</li>
+                    <li>Czw. Pt. 8:00-21:00</li>
+                    <li>Pt. Pt. 8:00-21:00</li>
+                    <li>Sob. 8:00-16:00</li>
+                    <li>Niedz. <span id="red">NIECZYNNE</span></li>
+                </ul>
+                <ul>
+                    <li>tel. 12 648 59 57</li>
+                    <li>fax 12 648 60 35</li>
+                    <li>NIP: 678-00-25-093</li>
+                    <li>mail: apteka.podjarzebinami@wp.pl</li>
+                </ul>
+            </div>
+
+            <iframe id="mapka"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1279.9652788139904!2d20.020758!3d50.087587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x487f7567e0d080ba!2sApteka%20Pod%20Jarz%C4%99binami!5e0!3m2!1spl!2spl!4v1620238853596!5m2!1spl!2spl"
+                loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="copy">Copyright &copy; 2021 Marek Porębski, All right reserved.</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

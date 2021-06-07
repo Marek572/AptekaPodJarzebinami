@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  overflow-x: hidden; /* chowa poziomy scrollbar */
+  background-color: #f1f5f2;
+  font-family: "Poppins", Verdana, Tahoma;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  padding: 0 5% 0 5%;
+  background: #F64740;
+  border-bottom: 4px solid #3C0000;
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 5;
+}
+
+nav > #logo {
+  color: #f1f5f2;
+  font-size: 30px;
+  font-weight: bold;
+  height: 100%;
+  line-height: 80px;
+  text-align: center;
+  flex: 3;
+}
+
+nav > #logo:hover,
+#zoom:hover,
+a:hover {
+  color: #3C0000;
+  transition: 1s;
+}
+
+nav > a {
+  font-size: 18px;
+  line-height: 80px;
+  color: #f1f5f2;
+  text-align: center;
+  text-decoration: none;
+  flex: 0.8;
+}
+
+nav > #zoom {
+  line-height: 80px;
+  color: #f1f5f2;
+  text-align: center;
+  cursor: pointer;
+  flex: 0.8;
+}
+
+nav > #menu {
+  line-height: 80px;
+  color: #f1f5f2;
+  text-align: center;
+  flex: 0.5;
+  display: none;
+}
+
+#mobileNav {
+  display: flex;
+  position: fixed;
+  top: 80px;
+  width: 100vw;
+  height: 0px;
+  background-color: #FFB800;
+  z-index: 5;
+}
+
+.mobileLink {
+  display: flex;
+  font-size: 18px;
+  line-height: 80px;
+  color: #3C0000;
+  text-align: center;
+  z-index: 5;
+  opacity: 0;
+  text-decoration: none;
+  flex: 1;
+  justify-content: center;
+}
+
+#bgGallery {
+  border-bottom: 4px solid #3C0000;
+  height: 100vh;
+}
+
+#bgGallery > .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#bgGallery > #arrow {
+  position: absolute;
+  top: 90%;
+  left: 48%;
+  width: 100px;
+}
+
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 30px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px #256EFF solid;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+.copy {
+  font-size: 10px;
+  padding-bottom: 10px;
+  margin: 10px 30px 30px 10px;
+  display: block;
+  float: right;
+}
+
+#info {
+  height: 520px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#kontakt {
+  width: 25%;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+#kontakt > li {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+
+#red {
+  color: red;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#mapka {
+  border: 0;
+  height: 100%;
+  width: 50%;
+}
+
+@keyframes expand {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 80px;
+  }
+}
+
+@keyframes collapse {
+  from {
+    height: 80px;
+  }
+  to {
+    height: 0px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav > #zoom {
+    font-size: 15px;
+    display: none;
+  }
+
+  nav > a {
+    font-size: 18px;
+  }
+
+  nav > #logo {
+    font-size: 1.5em;
+  }
+
+  #arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  nav > a {
+    font-size: 16px;
+  }
+
+  nav > #logo {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 768px) {
+  nav > a {
+    display: none;
+  }
+
+  a:hover {
+    color: #4c2e05;
+  }
+
+  nav > #logo {
+    display: flex;
+  }
+
+  nav > #menu {
+    font-size: 35px;
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  nav > #logo {
+    text-align: left;
+    font-size: 1em;
+  }
+
+  nav > a {
+    display: none;
+  }
+
+  nav > #zoom {
+    display: none;
+  }
+
+  nav > #menu {
+    font-size: 25px;
+    display: block;
+  }
+
+  .content {
+    height: auto;
+    font-size: 16px;
+    position: relative;
+    z-index: 4;
+    background-color: #f1f5f2;
+    border-top: 4px solid #14281d;
+  }
+
+  #bgGallery {
+    border: none;
+    height: 375px;
+  }
+
+  #info {
+    height: 900px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #kontakt {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  #mapka {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+}
