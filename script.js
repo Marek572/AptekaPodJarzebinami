@@ -1,14 +1,16 @@
-var button = document.getElementsByClassName("content")[0];
+var content = document.getElementsByClassName("content")[0];
+var button = document.getElementById("zoom");
 var zoom = false;
 
 function sizeUp(){
     if(zoom){
-        button.style.fontSize="18px";//wartość bez zooma
+        content.style.fontSize="18px";//wartość bez zooma
+        button.innerHTML="Większe Litery"
         zoom = false;
        }
        else{
-        button.style.fontSize="25px";//wartość z zoomem
-        //zwiekszajaca sie mapka?
+        content.style.fontSize="25px";//wartość z zoomem
+        button.innerHTML="Mniejsze Litery"
         zoom = true;
        }
 }
