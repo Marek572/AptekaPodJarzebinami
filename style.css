@@ -23,6 +23,15 @@ nav {
   z-index: 5;
 }
 
+nav > a {
+  font-size: 18px;
+  line-height: 80px;
+  color: #f1f5f2;
+  text-align: center;
+  text-decoration: none;
+  flex: 0.8;
+}
+
 nav > #logo {
   color: #f1f5f2;
   font-size: 30px;
@@ -33,28 +42,19 @@ nav > #logo {
   flex: 3;
 }
 
-nav > #logo:hover,
-#zoom:hover,
-a:hover {
-  color: #3C0000;
-  transition: 1s;
-}
-
-nav > a {
-  font-size: 18px;
-  line-height: 80px;
-  color: #f1f5f2;
-  text-align: center;
-  text-decoration: none;
-  flex: 0.8;
-}
-
 nav > #zoom {
   line-height: 80px;
   color: #f1f5f2;
   text-align: center;
   cursor: pointer;
   flex: 0.8;
+}
+
+nav > #logo:hover,
+#zoom:hover,
+a:hover {
+  color: #3C0000;
+  transition: 1s;
 }
 
 nav > #menu {
@@ -130,6 +130,12 @@ article{
   border-bottom: 1px dashed #F64740;
 }
 
+article>p{
+  font-size: 15px;
+  margin: 8px 0;
+  opacity: 0.8;
+}
+
 h2{
   margin: 10px 0 0 0;
   font-size: 18px;
@@ -138,19 +144,6 @@ h2{
 h2>.data{
   color: #F64740; 
   font-size: 12px;
-}
-
-article>p{
-  font-size: 15px;
-  margin: 8px 0;
-  opacity: 0.8;
-}
-
-footer{
-  font-size: 8px;
-  padding: 10px 0 20px 0;
-  position: absolute;
-  right: 20px;
 }
 
 #info {
@@ -183,6 +176,13 @@ ul {
   border: 0;
   height: 100%;
   width: 50%;
+}
+
+footer{
+  font-size: 8px;
+  padding: 10px 0 20px 0;
+  position: absolute;
+  right: 20px;
 }
 
 @keyframes expand {
