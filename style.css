@@ -12,7 +12,7 @@ nav {
   position: fixed;
   width: 100vw;
   height: 80px;
-  padding: 0 5% 0 5%;
+  padding: 0 5%;
   background: #F64740;
   border-bottom: 4px solid #3C0000;
   display: flex;
@@ -117,11 +117,33 @@ nav > #menu {
   font-weight: bold;
   border-bottom: 1px #F64740 solid;
   padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 p {
   text-align: justify;
+}
+
+article{
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #F64740;
+}
+
+h2{
+  margin: 10px 0 0 0;
+  font-size: 18px;
+}
+
+h2>.data{
+  color: #F64740; 
+  font-size: 12px;
+}
+
+article>p{
+  font-size: 15px;
+  margin: 8px 0;
+  opacity: 0.8;
 }
 
 footer{
@@ -129,12 +151,6 @@ footer{
   padding: 10px 0 20px 0;
   position: absolute;
   right: 20px;
-}
-
-.id {
-  width: 100%;
-  font-size: 10px;
-  text-align: right;
 }
 
 #info {

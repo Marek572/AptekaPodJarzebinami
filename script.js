@@ -3,13 +3,13 @@ var button = document.getElementById("zoom");
 var zoom = false;
 
 function sizeUp(){
-    if(zoom){
-        content.style.fontSize="18px";//wartość bez zooma
+    if(zoom){ //wartość bez zooma
+        content.style.fontSize="18px";
         button.innerHTML="Większe Litery"
         zoom = false;
        }
-       else{
-        content.style.fontSize="25px";//wartość z zoomem
+       else{ //wartość z zoomem
+        content.style.fontSize="25px";
         button.innerHTML="Mniejsze Litery"
         zoom = true;
        }
